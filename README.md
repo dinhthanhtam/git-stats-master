@@ -11,6 +11,7 @@ cd git-stats-master
 ruby git_stats.rb -b [branch] -f [from_YYYY-MM-DD] -t [to_YYYY-MM-DD]
 
 output of program: highchart will draw in firefox browser
+
 ================
 
 git-stats-master
