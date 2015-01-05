@@ -1,0 +1,51 @@
+
+        <DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<script lang = "javascript">
+			$(function () {
+			    $('#container').highcharts({
+			        title: {
+			            text: 'Commit Per Day',
+			            x: -20 //center
+			        },        
+			        xAxis: {
+			            categories: ["09/02", "09/03", "09/04", "09/05", "09/06", "09/07", "09/10", "09/11", "09/12", "09/13", "09/14", "09/15", "09/17", "09/18", "09/21", "09/19", "09/20", "09/23", "09/24", "09/25", "09/26", "09/27", "09/28", "09/29", "09/30", "10/01"]
+			        },
+			        yAxis: {
+			            title: {
+			                text: 'Commit'
+			            },
+			            plotLines: [{
+			                value: 0,
+			                width: 1,
+			                color: '#808080'
+			            }]
+			        },
+			        tooltip: {
+			            valueSuffix: 'commits'
+			        },
+			        legend: {
+			            layout: 'vertical',
+			            align: 'right',
+			            verticalAlign: 'middle',
+			            borderWidth: 0
+			        },
+			        series: [{
+			            name: '',
+			            data: [1, 84, 79, 144, 141, 90, 88, 87, 90, 50, 59, 2, 9, 101, 110, 74, 88, 27, 43, 48, 73, 56, 58, 8, 5, 75]
+			        }]
+			    });
+			});
+		</script>
+    </html>
+  
